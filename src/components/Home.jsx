@@ -3,31 +3,33 @@ import RenderCards from './RenderCards';
 
 function Home() {
 
-const [pokes, setPokes] = useState([]);
 const [pokemon, setPokemon] = useState([])
 
 useEffect(()=>{
-  fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+  fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
   .then(res => res.json())
-  .then(data => setPokes(data.results))
+  .then(data => setPokemon(data.results))
 }, [])
 
 
 
-useEffect(()=>{
-pokes.map((poke)=>{
-  fetch(`${poke.url}`)
-  .then(res => res.json())
-  .then(data => console.log(data.name)) 
+// useEffect(()=>{
+// pokes.map((poke)=>{
+//   fetch(`${poke.url}`)
+//   .then(res => res.json())
+//   .then(data => console.log(data.name)) 
   
-  })
-}, [pokes,setPokes])
+//   })
+// }, [pokes,setPokes])
 
+const callRenderCards = pokemon.map((poke)=>{
+  return <RenderCards url={poke.url} key={poke.name}/>
+})
 
 
   return (
     <div className="App">
-      {/* <RenderCards pokemon={pokemon}/> */}
+      {callRenderCards}
     </div>
   );
 }

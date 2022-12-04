@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
 
-export default function RenderCollection({pokemon}){
+export default function RenderCollection({pokemon, onDelete, onUpdate}){
 
 const [inputName, setInputName] = useState(false);
 const [pokeName, setPokeName] = useState('');
@@ -20,14 +20,36 @@ function handleSubmit(event){
     event.preventDefault();
     if (pokeName === ''){
         setIsEmpty(true)
-    }else{console.log(pokeName)}
+    }else{
+            console.log(pokeName)
+            onUpdate(pokemon.id,pokeName)
+        //     fetch(`http://localhost:3000/pokemon/${pokemon.id}`,{
+        //     method: "PATCH",
+        //     headers: {
+        //         'Conten-Type' : 'application/json',
+        //     },
+        //     body: JSON.stringify({
+        //         nickname : pokeName
+        //     })
+        // })
+        // .then(res => res.json())
+        // .then(data => console.log(data))
+    }
 }
 
+function handleDeleteClick(){
+    fetch(`http://localhost:3000/pokemon/${pokemon.id}`,{
+        method: "DELETE",
+    })
+    onDelete(pokemon.id)
+}
 
 const showInput = <form onSubmit={handleSubmit}>
     <input type="text" value={pokeName} onChange={handleRename}/>
     <button type='submit'>Submit</button>
 </form>
+
+
 
 
 
@@ -38,6 +60,7 @@ const showInput = <form onSubmit={handleSubmit}>
             <button onClick={()=>{setInputName(!inputName)}}>Rename Pokemon</button>
             {inputName && showInput}
             {isEmpty && <p>Cannot be blank</p>}
+            <button onClick={handleDeleteClick}>Send to Giovanni</button>
         </div>
     )
 }

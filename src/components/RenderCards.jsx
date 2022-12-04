@@ -42,7 +42,7 @@ function handleSave(){
         body: JSON.stringify(pokemonData),
       })
         .then((r) => r.json())
-        .then((pokemon) => console.log(pokemon));
+        
     }
 
     // const Modal = () => (

@@ -1,16 +1,40 @@
 {
   "pokemon": [
     {
+      "name": "ivysaur",
+      "pokeId": 2,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "id": 4
+    },
+    {
       "name": "bulbasaur",
       "pokeId": 1,
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-      "id": 1
+      "id": 8
     },
     {
       "name": "charizard",
       "pokeId": 6,
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
-      "id": 2
+      "id": 9
+    },
+    {
+      "name": "squirtle",
+      "pokeId": 7,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      "id": 10
+    },
+    {
+      "name": "wartortle",
+      "pokeId": 8,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+      "id": 11
+    },
+    {
+      "name": "wartortle",
+      "pokeId": 8,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+      "id": 12
     }
   ]
 }

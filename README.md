@@ -8,4 +8,8 @@ Commit 4 - Created db.json file and added functionality to RenderCards so data i
 
 Commit 5 - Added confrmation message when pokemon is saved to database
 
-Commit 6 - Added Collection and RenderCollection components. User input validation added to RenderCollection.
+Commit 6 - Added Collection and RenderCollection components. User input validation added to RenderCollection change pokemon name.
+
+Commit 7 - Added working delete request in RenderCollection and working useRef counter in Collection. Added patch request in RenderCollection and Collection but needs work to function. 
+
+Commit 8 - PATCH request works and rename function persists on database. 

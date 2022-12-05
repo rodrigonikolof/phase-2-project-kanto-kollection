@@ -22,23 +22,9 @@ function updateAfterDeletion(deletedPokemonId){
     count.current = count.current + 1;
 }
 
-function updateName(id, pokeName){
-    console.log (id, pokeName)
-    fetch(`http://localhost:3000/pokemon/${id}`,{
-        method: "PATCH",
-        headers: {
-            'Conten-Type' : 'application/json',
-        },
-        body: JSON.stringify({
-            name : pokeName
-        })
-    })
-    .then(res => res.json())
-    .then(data => console.log(data))
-}
 
 const renderCollection = pokeCollection.map((poke)=>{
-return <RenderCollection pokemon={poke} key={poke.id} onDelete={updateAfterDeletion} onUpdate={updateName}/>
+return <RenderCollection pokemon={poke} key={poke.id} onDelete={updateAfterDeletion} />
 })
 
 

@@ -1,40 +1,35 @@
 {
   "pokemon": [
     {
-      "name": "ivysaur",
-      "pokeId": 2,
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
-      "id": 4
-    },
-    {
-      "name": "bulbasaur",
+      "name": "Bob the Builder",
       "pokeId": 1,
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-      "id": 8
+      "id": 8,
+      "nickname": "sdfafa"
     },
     {
-      "name": "charizard",
+      "name": "Angry Joe",
       "pokeId": 6,
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
       "id": 9
-    },
-    {
-      "name": "squirtle",
-      "pokeId": 7,
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
-      "id": 10
-    },
-    {
-      "name": "wartortle",
-      "pokeId": 8,
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
-      "id": 11
     },
     {
       "name": "wartortle",
       "pokeId": 8,
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
       "id": 12
+    },
+    {
+      "name": "Toby Maguire",
+      "pokeId": 1,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "id": 13
+    },
+    {
+      "name": "caterpie",
+      "pokeId": 10,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+      "id": 14
     }
   ]
 }

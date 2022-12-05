@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react'
 
-export default function RenderCollection({pokemon, onDelete, onUpdate}){
+export default function RenderCollection({pokemon, onDelete}){
 
 const [inputName, setInputName] = useState(false);
 const [pokeName, setPokeName] = useState('');
@@ -21,19 +21,19 @@ function handleSubmit(event){
     if (pokeName === ''){
         setIsEmpty(true)
     }else{
-            console.log(pokeName)
-            onUpdate(pokemon.id,pokeName)
-        //     fetch(`http://localhost:3000/pokemon/${pokemon.id}`,{
-        //     method: "PATCH",
-        //     headers: {
-        //         'Conten-Type' : 'application/json',
-        //     },
-        //     body: JSON.stringify({
-        //         nickname : pokeName
-        //     })
-        // })
-        // .then(res => res.json())
-        // .then(data => console.log(data))
+            
+            fetch(`http://localhost:3000/pokemon/${pokemon.id}`,{
+            method: "PATCH",
+            headers: {
+                'Content-Type' : 'application/json',
+            },
+            body: JSON.stringify({
+                name : pokeName
+            })
+        })
+        .then(res => res.json())
+        .then(data => setPokeName(data.name))
+        .then(()=>setInputName(false))
     }
 }
 

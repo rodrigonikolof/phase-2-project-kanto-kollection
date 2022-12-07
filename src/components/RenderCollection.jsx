@@ -54,7 +54,7 @@ const showInput = <form onSubmit={handleSubmit}>
 
 
     return(
-        <div>
+        <div className='single-collection-card'>
             <img src={pokemon? pokemon.image : null}/>
             <p>{pokemon? pokeName : null}</p>
             <button onClick={()=>{setInputName(!inputName)}}>Rename Pokemon</button>

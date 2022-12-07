@@ -30,6 +30,24 @@
       "pokeId": 10,
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
       "id": 14
+    },
+    {
+      "name": "blastoise",
+      "pokeId": 9,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+      "id": 15
+    },
+    {
+      "name": "bulbasaur",
+      "pokeId": 1,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "id": 16
+    },
+    {
+      "name": "squirtle",
+      "pokeId": 7,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      "id": 17
     }
   ]
 }

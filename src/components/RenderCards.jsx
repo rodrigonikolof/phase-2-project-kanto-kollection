@@ -1,8 +1,8 @@
 // import { type } from '@testing-library/user-event/dist/type';
 import React from 'react';
-import { useState, useEffect } from 'react'
-// import Popup from 'reactjs-popup';
-// import 'reactjs-popup/dist/index.css';
+import { useState, useEffect } from 'react';
+import Button from 'react-bootstrap/Button';
+
 
 
 
@@ -60,17 +60,20 @@ function handleSave(){
     // );
 
  
-
+function testClick(){
+  console.log(thisPokemon.name)
+}
     
 
     return(
-        <div className="pokeCard" >
+        <div className="single-poke-card" >
             <img src={thisPokemon? thisPokemon.sprites.front_default : null} alt={'Gathering pokeballs...'}/>
             <p>{thisPokemon? thisPokemon.id + ' - ' + thisPokemon.name.toUpperCase() : null}</p>
             <small>{thisPokemon? thisPokemon.types[0].type.name : null}</small>
             {/* <small>{thisPokemon.types.length === 2 ?  thisPokemon.types[1].type.name : null}</small> */}
-            <button onClick={handleSave}>Steal Pokemon</button>
+            <Button variant="danger" onClick={handleSave}>Steal Pokemon</Button>
             {savedMsg && <p>Saved</p>}
+            
             
            
             

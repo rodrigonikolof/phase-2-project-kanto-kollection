@@ -3,39 +3,51 @@
   background-color: rgb(145, 128, 108);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  max-width: 5em;
+} 
+.navbar{
+  background-color: #61dafb;
 }
-
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-container{
+  min-width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navlinks{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content:space-around;
+}
+.poke-cards{
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.home-header{
+  min-width: 100%;
+  margin-top: 1em;
+}
+.single-poke-card{
+  min-width: 13em;
+  margin: 2em 2em 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.collection-container{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.collection-header{
+  min-width: 100%;
+}
+.single-collection-card{
+  min-width: 20em;
+  margin: 2em 2em 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 600px) {
+  .poke-cards {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .collection-container{
+    display: block;
   }
 }

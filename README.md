@@ -13,3 +13,5 @@ Commit 6 - Added Collection and RenderCollection components. User input validati
 Commit 7 - Added working delete request in RenderCollection and working useRef counter in Collection. Added patch request in RenderCollection and Collection but needs work to function. 
 
 Commit 8 - PATCH request works and rename function persists on database. 
+
+Commit 9 - Added first layer of styling to components Collection, Navbar, RenderCollection, Home, RenderCards.

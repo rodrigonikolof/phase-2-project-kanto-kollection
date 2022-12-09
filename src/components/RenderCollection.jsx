@@ -1,5 +1,6 @@
 import React from 'react';
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
+import Button from 'react-bootstrap/Button';
 
 export default function RenderCollection({pokemon, onDelete}){
 
@@ -45,8 +46,8 @@ function handleDeleteClick(){
 }
 
 const showInput = <form onSubmit={handleSubmit}>
-    <input type="text" value={pokeName} onChange={handleRename}/>
-    <button type='submit'>Submit</button>
+    <input type="text" value={pokeName} onChange={handleRename} className="rename-input"/>
+    <Button variant="secondary" type='submit'>Submit</Button>
 </form>
 
 
@@ -57,10 +58,10 @@ const showInput = <form onSubmit={handleSubmit}>
         <div className='single-collection-card'>
             <img src={pokemon? pokemon.image : null}/>
             <p>{pokemon? pokeName : null}</p>
-            <button onClick={()=>{setInputName(!inputName)}}>Rename Pokemon</button>
+            <Button variant="secondary" onClick={()=>{setInputName(!inputName)}}>Rename Pokemon</Button>
             {inputName && showInput}
             {isEmpty && <p>Cannot be blank</p>}
-            <button onClick={handleDeleteClick}>Send to Giovanni</button>
+            <Button variant="danger" onClick={handleDeleteClick}>Send to Giovanni</Button>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../img/logo.png'
 import '../App.css';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -15,9 +16,9 @@ return (
   
       <div className='navlinks'>
           
-          <Link to="/">Home</Link>
+          <Link to="/"><Button variant="light">Find Pokemon</Button></Link>
          
-          <Link to="/collection">Collection</Link>
+          <Link to="/collection"><Button variant="light">View Collection</Button></Link>
          
       </div>
     </div>

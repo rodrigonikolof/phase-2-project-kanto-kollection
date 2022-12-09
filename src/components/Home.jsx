@@ -21,7 +21,9 @@ const callRenderCards = pokemon.map((poke)=>{
 
   return (
     <div className="poke-cards">
-      <h2 className="home-header">Poke Poach List</h2>
+      <div className="home-title">
+        <h2 className="home-header">Poke Poach List</h2>
+      </div>
              {callRenderCards}
  
     </div>

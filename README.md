@@ -15,3 +15,5 @@ Commit 7 - Added working delete request in RenderCollection and working useRef c
 Commit 8 - PATCH request works and rename function persists on database. 
 
 Commit 9 - Added first layer of styling to components Collection, Navbar, RenderCollection, Home, RenderCards.
+
+Commit 10 - Further styling to all components;

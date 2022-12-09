@@ -69,7 +69,7 @@ function testClick(){
         <div className="single-poke-card" >
             <img src={thisPokemon? thisPokemon.sprites.front_default : null} alt={'Gathering pokeballs...'}/>
             <p>{thisPokemon? thisPokemon.id + ' - ' + thisPokemon.name.toUpperCase() : null}</p>
-            <small>{thisPokemon? thisPokemon.types[0].type.name : null}</small>
+            {/* <small>{thisPokemon? thisPokemon.types[0].type.name : null}</small> */}
             {/* <small>{thisPokemon.types.length === 2 ?  thisPokemon.types[1].type.name : null}</small> */}
             <Button variant="danger" onClick={handleSave}>Steal Pokemon</Button>
             {savedMsg && <p>Saved</p>}

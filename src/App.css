@@ -1,13 +1,26 @@
+html, body{
+  min-height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+/* #root{
+  background-color: black;
+  height: 500%;
+} */
+
 .App {
   text-align: center;
-  background-color: rgb(145, 128, 108);
+  background-color: rgb(0, 0, 0);
 }
 
 .logo{
   max-width: 5em;
+  margin-top: 1em;
 } 
 .navbar{
-  background-color: #61dafb;
+  background-color: #000000;
+  margin-bottom: 2em;
+  min-width: 100%;
 }
 .logo-container{
   min-width: 100%;
@@ -20,11 +33,15 @@
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 80%;
+}
+.home-title{
+  width: 100%;
+  background-color: rgb(142, 22, 22);
 }
 .home-header{
   min-width: 100%;
-  margin-top: 1em;
-}
+  }
 .single-poke-card{
   min-width: 13em;
   margin: 2em 2em 2em;
@@ -34,20 +51,71 @@
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 80%;
+  
 }
 .collection-header{
   min-width: 100%;
+  background-color:  rgb(142, 22, 22);
+  display: flex;
+  justify-content: center;
+}
+
+.counter-container{
+  min-width: 100%;
+  display: flex;
+  justify-content: end;
+  /* background-color: aqua; */
+  /* display: flex; */
+  /* width: 100%;
+  margin-top: 1em;
+  justify-content: end;
+  padding-right: 1em; */
 }
 .single-collection-card{
   min-width: 20em;
-  margin: 2em 2em 2em;
+  margin: 2em 2em 2em;  
 }
 
+.rename-input{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 1px;
+}
+
+h1{
+  color: rgb(142, 22, 22);
+}
+h2{
+  color: rgb(237, 230, 230);
+}
+h4{
+  color: rgb(151, 158, 164);
+}
+p{
+  color: rgb(151, 158, 164);
+}
+
+
+
 @media screen and (max-width: 600px) {
+  .logo{
+    margin-bottom: 1em;
+  }
   .poke-cards {
     display: block;
+    margin-left: 10%;
   }
   .collection-container{
     display: block;
+  }
+  .collection-header{
+    margin-left: 10%;
+  }
+  .counter-container{
+    margin-left: 10%;
+    margin-top: 1em;
+    margin-bottom: -1em;
+    justify-content: center;
   }
 }

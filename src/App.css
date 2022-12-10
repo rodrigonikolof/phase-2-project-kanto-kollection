@@ -3,6 +3,11 @@ html, body{
   width: 100%;
   background-color: rgb(0, 0, 0);
 }
+@font-face{
+  font-family: 'PKMN-RBYGSC';
+  src:local('PKMN-RBYGSC'), url('./fonts/PKMN-RBYGSC.ttf') format('truetype');
+  font-weight: normal;
+}
 /* #root{
   background-color: black;
   height: 500%;
@@ -85,17 +90,57 @@ html, body{
 
 h1{
   color: rgb(142, 22, 22);
+  font-family: PKMN-RBYGSC;
 }
 h2{
-  color: rgb(237, 230, 230);
+  color: rgb(151, 158, 164);
+  font-family: PKMN-RBYGSC;
+  padding-top: 7px;
 }
 h4{
   color: rgb(151, 158, 164);
+  font-family: PKMN-RBYGSC;
 }
 p{
   color: rgb(151, 158, 164);
+  font-family: PKMN-RBYGSC;
 }
 
+.pixel {
+  line-height: 0;
+  background-color: rgb(142, 22, 22);
+  
+  border-style: solid;
+  border-width: 20px;
+  -moz-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+  -webkit-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+  -o-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+  border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+}
+.pixel p {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: auto;
+  text-align: center;
+  margin: -20px -20px;
+  line-height: 20px;
+  padding: 10px 20px;
+  
+	background: #000000;
+	background:
+		linear-gradient(135deg, transparent 10px, #000000 0) top left,
+		linear-gradient(225deg, transparent 10px, #000000 0) top right,
+		linear-gradient(315deg, transparent 10px, #000000 0) bottom right,
+		linear-gradient(45deg,  transparent 10px, #000000 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-image:
+		radial-gradient(circle at 0 0, rgba(204,0,0,0) 14px, #000000 15px),
+		radial-gradient(circle at 100% 0, rgba(204,0,0,0) 14px, #000000 15px),
+		radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 14px, #000000 15px),
+		radial-gradient(circle at 0 100%, rgba(204,0,0,0) 14px, #000000 15px);
+}
 
 
 @media screen and (max-width: 600px) {

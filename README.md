@@ -17,3 +17,5 @@ Commit 8 - PATCH request works and rename function persists on database.
 Commit 9 - Added first layer of styling to components Collection, Navbar, RenderCollection, Home, RenderCards.
 
 Commit 10 - Further styling to all components;
+
+Commit 11 - Changed font across all elements and updated NavBar buttons;

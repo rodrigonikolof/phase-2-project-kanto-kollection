@@ -1,8 +1,6 @@
  import React, {useState, useEffect} from "react";
 import RenderCards from './RenderCards';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 
 function Home() {
 
@@ -22,7 +20,7 @@ const callRenderCards = pokemon.map((poke)=>{
   return (
     <div className="poke-cards">
       <div className="home-title">
-        <h2 className="home-header">Poke Poach List</h2>
+        <h2 className="home-header">POACHING LIST</h2>
       </div>
              {callRenderCards}
  

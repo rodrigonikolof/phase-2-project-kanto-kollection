@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './fonts/PKMN-RBYGSC.ttf';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -31,7 +31,7 @@ return <RenderCollection pokemon={poke} key={poke.id} onDelete={updateAfterDelet
 return (
     <div className="collection-container">
         <div className="collection-header">
-            <h2>Poached Pokemon</h2>
+            <h2>POACHED POKEMON</h2>
         </div>
         <div className="counter-container">
                 <h4>{count.current} pokemon sent</h4>

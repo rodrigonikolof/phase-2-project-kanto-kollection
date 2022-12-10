@@ -53,16 +53,9 @@ function handleSave(){
         
     }
 
-    // const Modal = () => (
-    //   <Popup trigger={<button className="button"> Open Modal </button>} modal>
-    //     <span> Modal content </span>
-    //   </Popup>
-    // );
 
  
-function testClick(){
-  console.log(thisPokemon.name)
-}
+
     
 
     return(

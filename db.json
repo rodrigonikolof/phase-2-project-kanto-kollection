@@ -24,6 +24,24 @@
       "pokeId": 1,
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
       "id": 13
+    },
+    {
+      "name": "caterpie",
+      "pokeId": 10,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+      "id": 14
+    },
+    {
+      "name": "venusaur",
+      "pokeId": 3,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "id": 15
+    },
+    {
+      "name": "charmander",
+      "pokeId": 4,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "id": 16
     }
   ]
 }

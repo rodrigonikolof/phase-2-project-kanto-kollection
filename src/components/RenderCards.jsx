@@ -11,12 +11,6 @@ function RenderCards({url, isPikachuMode}){
  const [thisPokemon, setThisPokemon] = useState(null);
  const [savedMsg, setSavedMsg] = useState(false)
 
-
-//  if (thisPokemon){
-//  const pokeName = thisPokemon.name.charAt(0).toUpperCase() + thisPokemon.name.slice(1)}
-
-
-
  useEffect(()=>{
     fetch(url)
     .then(res => res.json())
@@ -24,23 +18,16 @@ function RenderCards({url, isPikachuMode}){
     
  },[])
  
-
-
-//  if (thisPokemon.types.length > 1) {
-//    (thisPokemon.types[0].type.name, thisPokemon.types[1].type.name)}
-
-// types[0].type.name
-
 function handleSave(){
     setSavedMsg(true)
     setTimeout(() => {
       setSavedMsg(false)
     }, 3000);
     const pokemonData = {
-        name : thisPokemon.name,
+        name : thisPokemon.name.toUpperCase(),
         pokeId : thisPokemon.id,
         image : thisPokemon.sprites.front_default
-        // types : thisPokemon.types
+        
       };
       fetch("http://localhost:3000/pokemon", {
         method: "POST",
@@ -53,24 +40,12 @@ function handleSave(){
         
     }
 
-
- 
-
-    
-
     return(
         <div className="single-poke-card" >
             <img src={thisPokemon? thisPokemon.sprites.front_default : null} alt={'Gathering pokeballs...'}/>
             <p className={isPikachuMode? 'pikachu-text' : null}>{thisPokemon? thisPokemon.id + ' - ' + thisPokemon.name.toUpperCase() : null}</p>
-            {/* <small>{thisPokemon? thisPokemon.types[0].type.name : null}</small> */}
-            {/* <small>{thisPokemon.types.length === 2 ?  thisPokemon.types[1].type.name : null}</small> */}
             <Button variant="danger" onClick={handleSave}>Steal Pokemon</Button>
-            {savedMsg && <p>Saved</p>}
-            
-            
-           
-            
-            
+            {savedMsg && <p>Caught it!</p>}      
         </div>
     ) 
 }

@@ -190,6 +190,9 @@ p{
 		radial-gradient(circle at 0 100%, rgba(156, 33, 33, 0) 14px, #f4f404 15px);
 }
 
+.scroll-up{
+  min-width: 100%;
+}
 
 @media screen and (max-width: 600px) {
   .logo{

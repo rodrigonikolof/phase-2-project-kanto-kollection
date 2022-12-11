@@ -3,7 +3,7 @@ import { useState, useEffect, useRef} from 'react'
 import RenderCollection from "./RenderCollection";
 
 
-function Collection({isPikachuMode}){
+function Collection({isPikachuMode, scrollUpBtn}){
 const [pokeCollection, setPokeCollection] = useState([]);
 const count = useRef(0)
 
@@ -39,6 +39,7 @@ return (
         </div>
         
         {renderCollection}
+        {pokeCollection.length>6 ? scrollUpBtn : null}
     </div>
     )
 }

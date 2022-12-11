@@ -2,7 +2,7 @@
 import RenderCards from './RenderCards';
 
 
-function Home() {
+function Home({isPikachuMode}) {
 
   const [pokemon, setPokemon] = useState([])
 
@@ -13,14 +13,14 @@ function Home() {
   }, [])
 
 const callRenderCards = pokemon.map((poke)=>{
-  return <RenderCards url={poke.url} key={poke.name}/>
+  return <RenderCards isPikachuMode={isPikachuMode} url={poke.url} key={poke.name}/>
 })
 
 
   return (
     <div className="poke-cards">
       <div className="home-title">
-        <h2 className="home-header">POACHING LIST</h2>
+        <h2 className={"home-header" + isPikachuMode? 'pikachu-text' : null}>POACHING LIST</h2>
       </div>
              {callRenderCards}
  

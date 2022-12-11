@@ -20,21 +20,30 @@ html, body{
 .pikachu{
   background-color: rgb(243, 243, 36);
 }
+.pikachu-text{
+  color: #000000;
+}
 .logo{
   max-width: 5em;
   margin-top: 1em;
 } 
+
 .navbar{
-  
   margin-bottom: 2em;
   min-width: 100%;
 }
 .logo-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.title{
   min-width: 100%;
 }
 .navlinks{
   display: flex;
   justify-content:space-around;
+  min-width: 100%;
 }
 .poke-cards{
   display: inline-flex;
@@ -63,7 +72,7 @@ html, body{
 }
 .collection-header{
   min-width: 100%;
-  background-color:  rgb(142, 22, 22);
+  background-color:   rgb(142, 22, 22);
   display: flex;
   justify-content: center;
 }
@@ -111,7 +120,7 @@ p{
 .pixel {
   line-height: 0;
   background-color: rgb(142, 22, 22);
-  
+  cursor: pointer;
   border-style: solid;
   border-width: 20px;
   -moz-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
@@ -144,6 +153,43 @@ p{
 		radial-gradient(circle at 0 100%, rgba(204,0,0,0) 14px, #000000 15px);
 }
 
+.pixel2 {
+  line-height: 0;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-style: solid;
+  border-width: 20px;
+  -moz-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+  -webkit-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+  -o-border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+  border-image: url(https://i.imgur.com/sREM8Yn.png) 20 stretch;
+}
+.pixel2 p {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: auto;
+  text-align: center;
+  margin: -20px -20px;
+  line-height: 20px;
+  padding: 10px 20px;
+  color: #000000;
+  
+
+	background:
+		linear-gradient(135deg, transparent 10px, #f4f404 0) top left,
+		linear-gradient(225deg, transparent 10px, #f4f404 0) top right,
+		linear-gradient(315deg, transparent 10px, #f4f404 0) bottom right,
+		linear-gradient(45deg,  transparent 10px, #f4f404 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat; 
+	background-image:
+		radial-gradient(circle at 0 0, rgba(180, 45, 45, 0) 14px, #f4f404 15px),
+		radial-gradient(circle at 100% 0, rgba(169, 43, 43, 0) 14px, #f4f404 15px),
+		radial-gradient(circle at 100% 100%, rgba(154, 44, 44, 0) 14px, #f4f404 15px),
+		radial-gradient(circle at 0 100%, rgba(156, 33, 33, 0) 14px, #f4f404 15px);
+}
+
 
 @media screen and (max-width: 600px) {
   .logo{
@@ -166,3 +212,7 @@ p{
     justify-content: center;
   }
 }
+@media screen and (max-width: 1150px){
+
+}
+

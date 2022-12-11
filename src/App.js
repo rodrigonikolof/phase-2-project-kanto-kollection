@@ -19,8 +19,8 @@ function handlePikachuMode (){
     <div className={"App " + (isPikachuMode ? "pikachu" : "")}>
       <Navbar isPikachuMode={isPikachuMode} onPikachuModeClick={handlePikachuMode}/>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path='/collection' element={<Collection/>}/>
+        <Route index element={<Home isPikachuMode={isPikachuMode}/>} />
+        <Route path='/collection' element={<Collection isPikachuMode={isPikachuMode}/>}/>
       </Routes>
 
     </div>

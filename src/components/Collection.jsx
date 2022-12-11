@@ -3,7 +3,7 @@ import { useState, useEffect, useRef} from 'react'
 import RenderCollection from "./RenderCollection";
 
 
-function Collection(){
+function Collection({isPikachuMode}){
 const [pokeCollection, setPokeCollection] = useState([]);
 const count = useRef(0)
 
@@ -24,17 +24,17 @@ function updateAfterDeletion(deletedPokemonId){
 
 
 const renderCollection = pokeCollection.map((poke)=>{
-return <RenderCollection pokemon={poke} key={poke.id} onDelete={updateAfterDeletion} />
+return <RenderCollection isPikachuMode={isPikachuMode} pokemon={poke} key={poke.id} onDelete={updateAfterDeletion} />
 })
 
 
 return (
     <div className="collection-container">
         <div className="collection-header">
-            <h2>POACHED POKEMON</h2>
+            <h2 className={isPikachuMode? 'pikachu-text' : null}>POACHED POKEMON</h2>
         </div>
         <div className="counter-container">
-                <h4>{count.current} pokemon sent</h4>
+                <h4 className={isPikachuMode? 'pikachu-text' : null}>{count.current} pokemon sent</h4>
             
         </div>
         

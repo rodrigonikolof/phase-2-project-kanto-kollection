@@ -10,18 +10,25 @@ function Navbar({isPikachuMode, onPikachuModeClick}){
 
 return (
 <nav className={'navbar ' + (isPikachuMode ? "pikachu" : "")}>
-  <div className='logo-container'>
-  <h1> SECRET POACHING DATABASE</h1>
-  <img className='logo' src={logo}/>
-  <button onClick={onPikachuModeClick}>{isPikachuMode? 'Rocket Mode':'Pikachu Mode'}</button>
 
+<div className='title'>
+<h1 className={isPikachuMode? 'pikachu-text' : null}> SECRET POACHING DATABASE</h1>
+</div>
+  
+  <div className='logo-container'> 
+  
+  <img className='logo' src={logo}/>
+  
+  </div>
       <div className='navlinks'>
           
-         <Link to="/"><div className='pixel'><p>Find Pokemon</p></div></Link>
+         <Link to="/"><div className={isPikachuMode?'pixel2':'pixel'}><p>Find Pokemon</p></div></Link>
          
-         <Link to="/collection"><div className='pixel'><p>View Collection</p></div></Link>
+         <Link to="/collection"><div className={isPikachuMode?'pixel2':'pixel'}><p>View Collection</p></div></Link>
+
+         <div className={isPikachuMode?'pixel2':'pixel'} onClick={onPikachuModeClick}><p>{isPikachuMode? 'Rocket Mode':'Pikachu Mode'}</p></div>
          
-      </div>
+      
     </div>
 </nav>
   )

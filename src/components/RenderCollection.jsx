@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 
-export default function RenderCollection({pokemon, onDelete}){
+export default function RenderCollection({pokemon, onDelete, isPikachuMode}){
 
 const [inputName, setInputName] = useState(false);
 const [pokeName, setPokeName] = useState('');
@@ -57,7 +57,7 @@ const showInput = <form onSubmit={handleSubmit}>
     return(
         <div className='single-collection-card'>
             <img src={pokemon? pokemon.image : null}/>
-            <p>{pokemon? pokeName : null}</p>
+            <p className={isPikachuMode? 'pikachu-text' : null}>{pokemon? pokeName : null}</p>
             <Button variant="secondary" onClick={()=>{setInputName(!inputName)}}>Rename Pokemon</Button>
             {inputName && showInput}
             {isEmpty && <p>Cannot be blank</p>}

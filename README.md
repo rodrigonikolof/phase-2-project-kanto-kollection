@@ -19,3 +19,7 @@ Commit 9 - Added first layer of styling to components Collection, Navbar, Render
 Commit 10 - Further styling to all components;
 
 Commit 11 - Changed font across all elements and updated NavBar buttons;
+
+Commit 12 - Added Pikachu theme mode, colors in child schemes need to be updated;
+
+Commit 13 - Text colour now adjusts according to the theme selected rocket/pikachu;

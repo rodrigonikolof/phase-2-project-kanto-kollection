@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 
 
 
-function RenderCards({url}){
+function RenderCards({url, isPikachuMode}){
 
  const [thisPokemon, setThisPokemon] = useState(null);
  const [savedMsg, setSavedMsg] = useState(false)
@@ -61,7 +61,7 @@ function handleSave(){
     return(
         <div className="single-poke-card" >
             <img src={thisPokemon? thisPokemon.sprites.front_default : null} alt={'Gathering pokeballs...'}/>
-            <p>{thisPokemon? thisPokemon.id + ' - ' + thisPokemon.name.toUpperCase() : null}</p>
+            <p className={isPikachuMode? 'pikachu-text' : null}>{thisPokemon? thisPokemon.id + ' - ' + thisPokemon.name.toUpperCase() : null}</p>
             {/* <small>{thisPokemon? thisPokemon.types[0].type.name : null}</small> */}
             {/* <small>{thisPokemon.types.length === 2 ?  thisPokemon.types[1].type.name : null}</small> */}
             <Button variant="danger" onClick={handleSave}>Steal Pokemon</Button>

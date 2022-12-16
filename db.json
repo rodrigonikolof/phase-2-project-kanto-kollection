@@ -30,24 +30,6 @@
       "pokeId": 10,
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
       "id": 15
-    },
-    {
-      "name": "VENUSAUR",
-      "pokeId": 3,
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
-      "id": 16
-    },
-    {
-      "name": "CHARMELEON",
-      "pokeId": 5,
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
-      "id": 17
-    },
-    {
-      "name": "WEEDLE",
-      "pokeId": 13,
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
-      "id": 18
     }
   ]
 }

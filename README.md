@@ -25,3 +25,5 @@ Commit 12 - Added Pikachu theme mode, colors in child schemes need to be updated
 Commit 13 - Text colour now adjusts according to the theme selected rocket/pikachu;
 
 Commit 14 - Added scroll to top button in Collection and Home, state held in App; 
+
+Commit 15 - Added function to filter content in Home. New component Filter added. 

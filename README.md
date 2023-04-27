@@ -1,4 +1,4 @@
-#Phase 2 Project - Kanto Kollection
+# Phase 2 Project - Kanto Kollection
 
 This application has a special place in my heart as it was my first ever React JS application with full CRUD (create, read, update, delete) capabilities. 
 And it has Pokemon in it! 

@@ -1,29 +1,27 @@
-Initial Commit - Initialised repo and added simple fetch request to test API
+#Phase 2 Project - Kanto Kollection
 
-Commit 2 - Created Home component and made initial fetch, started setting state on how to fetch the data from each URL received in the initial API GET Request.
+This application has a special place in my heart as it was my first ever React JS application with full CRUD (create, read, update, delete) capabilities. 
+And it has Pokemon in it! 
 
-Commit 3 - Created RenderCards component to render each Pokemon from the API
+<h3> What does this application do? </h3>
+It was made as part of my Software Engineering course at Academy Xi (Flatiron School).
+It is a React JS application which allows the user to add a Pokemon to their collection, rename it at will and then send it to Team Rocket's boss (delete it). 
+This then updates the total count of Pokemon which have been sent to the boss with a useRef hook. 
+All user actions interact with a local JSON server. 
 
-Commit 4 - Created db.json file and added functionality to RenderCards so data is saved on database
+<h3> What technologies does it use? </h3>
+It uses: 
+<ul>
+<li>React JS</li>
+<li>Vanilla CSS</li>
+<li>A single Bootstrap Button component</li>
+</ul>
 
-Commit 5 - Added confrmation message when pokemon is saved to database
-
-Commit 6 - Added Collection and RenderCollection components. User input validation added to RenderCollection change pokemon name.
-
-Commit 7 - Added working delete request in RenderCollection and working useRef counter in Collection. Added patch request in RenderCollection and Collection but needs work to function. 
-
-Commit 8 - PATCH request works and rename function persists on database. 
-
-Commit 9 - Added first layer of styling to components Collection, Navbar, RenderCollection, Home, RenderCards.
-
-Commit 10 - Further styling to all components;
-
-Commit 11 - Changed font across all elements and updated NavBar buttons;
-
-Commit 12 - Added Pikachu theme mode, colors in child schemes need to be updated;
-
-Commit 13 - Text colour now adjusts according to the theme selected rocket/pikachu;
-
-Commit 14 - Added scroll to top button in Collection and Home, state held in App; 
-
-Commit 15 - Added function to filter content in Home. New component Filter added. 
+<h3> How to run it? </h3>
+<ul>
+<li>cd into folder</li>
+<li>run npm install</li>
+<li>start the json server with "json-server --watch db.json" </li>
+<li>if the previous step fails, "run npm install --save json-server" and repeat previous step</li>
+<li>run npm start </li>
+</ul>
